@@ -1,190 +1,311 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erigi Vaishnavi - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">Portfolio</span>
+                <span class="logo-square"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About Me</a></li>
+                <li><a href="#" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
-    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
-        <div id="SectionHome" class="bgcontainer">
-            <nav id="navbar" class="navbar navbar-expand-lg  bg-secondary fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Portfolio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading1">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading2">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading3">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading5">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading4">Relevant courses</a>
-                            </li>
-                        </ul>
+    <!-- Pages Container -->
+    <main class="pages-container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="home-content">
+                
+                <div class="text-content">
+                    <h1 class="code-text">Hello, my name is <span class="name-highlight">Erigi Vaishnavi</span></h1>
+                    <h2 class="code-text">I'm a <span class="role typing"></span></h2>
+                    <p class="description">A recent graduate with a B.Tech in Computer Science and Engineering 
+                        from IIIT Dharwad, I am deeply passionate
+                        about becoming a proficient software developer and coding enthusiast. My goal is to continuously expand my
+                        technical expertise, contribute to innovative projects, and drive impactful software solutions that address real-world
+                        challenges.</p>
+                    <button class="more-about">More About me</button>
+                </div>
+                <div class="image-content">
+                    <img src="https://res.cloudinary.com/dt4w3q95b/image/upload/v1713012393/user_lfulfg.jpg" alt="Erigi Vaishnavi" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text-full">
+                    <h3>Hi, I'm <span class="highlight">Erigi Vaishnavi</span> and <span class="highlight-orange">Web Developer</span></h3>
+                    <p class="about-description">
+                        I'm a Computer Science and Engineering graduate from IIIT Dharwad, driven by a passion for learning and creating with technology. Throughout my academic journey, I’ve explored a wide range of domains from core computer science subjects to modern technologies and developed a strong foundation in both theoretical and practical aspects of computing. I’m always curious to understand how things work and motivated to solve real-world problems through innovative solutions. I enjoy working on challenges that help me grow, improve my thinking, and expand my technical perspective. I'm actively looking forward to opportunities where I can learn, contribute, and grow as a tech professional.
+                    </p>
+                </div>
+
+                <div class="info-and-skills">
+                    <div class="info-section">
+                        <div class="info-item">
+                            <h3>Highest Degree:</h3>
+                            <p>Undergraduate in B.tech (CSE) (2024)</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Email:</h3>
+                            <p>erigivaishnavi77@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Phone:</h3>
+                            <p>+91 6300246014</p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://drive.google.com/file/d/1rbNnuPyffAw17c5iARlxdNgUh8pMNt6s/view?usp=sharing" target="_blank" class="cv-btn">Download CV</a>
+                            <button class="hire-btn">Hire Me</button>
+                        </div>
+
+                        <div class="coding-profiles">
+                            <h3>Coding Profiles On:</h3>
+                            <div class="profile-buttons">
+                                <a href="https://leetcode.com/u/VaishnaviErigi/" target="_blank" class="profile-btn leetcode-btn">
+                                    <i class="fas fa-code"></i> Leetcode
+                                </a>
+                                <a href="https://www.geeksforgeeks.org/user/20bcs044_vaishu/" target="_blank" class="profile-btn gfg-btn">
+                                    <i class="fas fa-laptop-code"></i> GeeksforGeeks
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-container">
+                        <h2 class="skills-title">Skill Set</h2>
+                        <div class="skills-categories">
+                            <div class="skill-category">
+                                <h3>Programming Languages:</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">C/C++</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Tools & Frameworks:</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Express JS</span>
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">Bootstrap</span>
+                                    <span class="skill-tag">Visual Studio</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Databases:</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">MYSQL</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Operating Systems:</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Windows</span>
+                                    <span class="skill-tag">Linux</span>
+                                    <span class="skill-tag">Android</span>
+                                    <span class="skill-tag">Ubuntu</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Additional Skills:</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Good problem-solving skills</span>
+                                    <span class="skill-tag">Good written & verbal communication skills</span>
+                                    <span class="skill-tag">Communication skills</span>
+                                    <span class="skill-tag">Adept new technologies quickly</span>
+                                    <span class="skill-tag">Self-motivated</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
 
-            <div class="container" style="margin-top: 70px;">
-                <div class="row">
-                    <div>
-                        <div class="card1 row1 d-flex flex-row col-md-12 ">
-                            <div class="about-col-1">
-                                <img src="https://res.cloudinary.com/dt4w3q95b/image/upload/v1713012393/user_lfulfg.jpg" class="user">
-                            </div>
-                            <div class="header-text about-col-2">
-                                <h1 class="card-title" id="scrollspyHeading1">Hi, I'm Vaishnavi</h1>
-                                <p class="card-text paragraph">IIIT Dharwad '24 || Problem Solver || Frontend Developer || Seeking an Opportunity!!.</p>
-                                <p><a href="https://www.linkedin.com/in/erigi-vaishnavi/" class="linkedin link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">LinkedIn Profile</a>
-                                    <a href="https://drive.google.com/file/d/1G5zF0bLCv2OX1OLwiStkMnQbmXhl7UL8/view?usp=sharing" class="linkedin link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Resume</a>
-                                    <a href="mailto:erigivaishnavi77@gmail.com" style="text-align: right; font-size: 13px;" class="link-underline-primary linkedin">Email</a>
-                                </p>
-
-                            </div>
+                <div class="education-container">
+                    <h2 class="education-title">Education</h2>
+                    <div class="education-items">
+                        <div class="education-item">
+                            <h3>Indian Institute of Information Technology Dharwad (IIIT), Karnataka</h3>
+                            <p class="education-year">2020 – 2024</p>
+                            <p class="education-degree">Bachelor of Technology in Computer Science and Engineering</p>
+                            <p class="education-score">CGPA: 7.14/10</p>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h1 class="card-title headinge" id="scrollspyHeading2">Education</h1>
-                                <p class="card-text paragraphe">Bachelor of Science in Computer Science, with CGPA 7.03/10 in Indian Institute of Information Technology, Dharwad, Karnataka. <span class="light">Dec 2020 – May 2024</span> <br>
-                                    TS Board of Intermediate Education (MPC) with Percentage 86/100 in TSWREIS COE Jr College Nalgonda, Telangana. <span class="light">Mar. 2018 – Mar 2020</span> <br>
-                                    Mathematics, Science, Social, Biology(SSC) with CGPA 8.3/10 in TSWREIS School/Jr College Nalgonda Telangana. <span class="light">Jun. 2017 – Mar 2018</span>
-                                </p>
-                                <p></p>
 
-                            </div>
+                        <div class="education-item">
+                            <h3>TSWREIS COE Jr College Nalgonda, Telangana</h3>
+                            <p class="education-year">2018 – 2020</p>
+                            <p class="education-degree">TSBoard of Intermediate Education (MPC)</p>
+                            <p class="education-score">PERCENTAGE: 86/100</p>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h4 class="card-title headinge" id="scrollspyHeading3">Skills</h4>
-                                <p class="card-text paragraphs"><span>Languages:</span> Python, C, C++, Java, HTML/CSS, JavaScript, SQL, Solidity, NO-SQL, Scala, ApacheSpark, MySQL, Project Design,
-                                    React.js, UI/UX designs. <br>
-                                    ● Bootstrap. <br>
-                                    ● Amazon Lex, AWS Lambda, Amazon Lex Console, AWS. <br>
-                                    <span>Developer Tools:</span> VS Code, Google Cloud Platform, Codeblocks, OpenGL, Solidity, Web3, Ethereum, Ganache, Truffle, Android StudioU, Google colab. <br>
-                                    ● Human Computer Interaction, Software Engineering, and Technical Communication, Excellent team and stakeholder
-                                    communication skills.
-                                </p>
-                            </div>
+
+                        <div class="education-item">
+                            <h3>TSWREIS School G.V.Gudem, Nalgonda, Telangana</h3>
+                            <p class="education-year">2017 – 2018</p>
+                            <p class="education-degree">Mathematics, Science, Social, Biology</p>
+                            <p class="education-score">GPA: 8.3/10</p>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h4 class="card-title headinge" id="scrollspyHeading5">Projects</h4>
-                                <p class="card-text ">
-                                <ul class="ulp"><span>AN INFORMATORY WEBSITE</span> || HTML, CSS, JavaScript, Bootstrap. <br>
-                                    <li>I designed the user interface for "Readit," a web application where users can post and answer questions.
-                                        Collaborated with teammates to integrate front-end with back-end development. Ensured an appealing layout for questions, answers,
-                                        and user interactions using HTML, CSS, bootstrap and JavaScript. <br>
-
-                                    </li>
-                                </ul>
-
-                                <ul class="ulp"><span>DBMS - CAR VEHICLE INSURANCE</span> || Database Management Systems, SQL queries. <br>
-                                    <li>I collaborated on a project focused on car insurance, using database management systems (DBMS) and SQL queries.
-                                        We created tables and inserted data, emphasizing approachable query writing.
-                                        Through teamwork, I gained an understanding of DBMS importance and its ease in storing data, along with SQL query implementation.
-                                    </li>
-                                </ul>
-                                <ul class="ulp"><span>SECURE EHR WITH BLOCKCHAIN & ACCESS CONTROL</span> || Solidity, Web3, Ethereum, Ganache, Truffle. <br>
-                                    <li>We developed a secure Electronic Health Record (EHR) system using blockchain technology and access control measures.
-                                        Our goal was to protect patient data privacy and security while ensuring authorized access only.
-                                        We implemented the system with Ethereum, Smart Contracts, and other frameworks to automate access control and facilitate information
-                                        exchange. Challenges like scalability and interoperability remain, requiring further research and development for full realization of
-                                        blockchain advantages in healthcare.
-                                    </li>
-                                </ul>
-                                <ul class="ulp"><span>AWS CHATBOT WITH LEX AND LAMBDA</span> || Amazon Lex, AWS Lambda, Amazon Lex Console, Python. <br>
-                                    <li>We built an AWS chatbot with Amazon Lex and AWS Lambda, allowing natural language interactions. Steps included bot creation, intent definition, slot setup, Lambda function creation for logic and data
-                                        retrieval, linking Lambda to the bot, testing in Amazon Lex, and deployment on a website via ”Kommunicate”. This project
-                                        highlighted seamless integration of AWS services for an efficient and user-friendly chatbot solution.
-                                    </li>
-                                </ul>
-                                <ul class="ulp"><span>NON-INTRUSIVE LOAD MONITORING (NILM)</span> || Machine Learning and Deep Learning Models, Python, Google Colab.
-                                    <li>I led a deep investigation into Non-Intrusive Load Monitoring (NILM) methods, employing advanced Machine Learning and Deep Learning models
-                                        in Python on Google Colab. The focus was on analyzing complex energy consumption patterns to pinpoint individual appliance usage and
-                                        enhance energy efficiency across varied real-world scenarios. This work underscores NILM's potential to revolutionize sustainable energy
-                                        management and smart grid technologies.
-                                    </li>
-                                </ul>
-                                <ul class="ulp"><span>ANALYZING WIKIPEDIA TALK NETWORK WITH GRAPHX</span> || Apache Spark, Scala, OpenJDK.
-                                    <li>I utilized Apache Spark's GraphX library to analyze the Wikipedia Talk Network dataset, uncovering communities within it.
-                                        Leveraging Spark's distributed computing capabilities, I efficiently processed large-scale graph data and addressed scalability
-                                        challenges. Implemented the Connected Components algorithm to identify distinct user groups, revealing the network's social
-                                        structure. By calculating component sizes and highlighting the top 50 components, I pinpointed the most prominent discussion
-                                        communities. This project showcases my expertise in graph analysis using Spark and Scala, as well as my ability to optimize for
-                                        performance and deliver insightful results.
-                                    </li>
-                                </ul>
-                                <ul class="ulp"><span>3D-CITY-ARCHITECTURE</span> || Computer Graphics, C++, OpenGL, CodeBlocks.
-                                    <li>I led a project on 3D city architecture with OpenGL, employing C++ to create a virtual cityscape featuring detailed buildings,
-                                        roads, and interactive elements. Utilized OpenGL for rendering realistic structures and implemented user interaction for dynamic
-                                        exploration. Collaborated effectively with team members, showcasing proficiency in graphics programming and problem-solving,
-                                        serving as a testament to my skills in software development and computer graphics.
-                                    </li>
-                                </ul>
-                                <ul class="ulp"><span>TITANIC SURVIVAL PREDICTION USING MACHINE LEARNING</span> || Machine learning models, Python, GoogleColab. <br>
-                                    <li>I developed a machine learning project on Titanic survival prediction using logistic regression in Python,
-                                        leveraging Google Colab. Explored factors like age, gender, class, and fare to predict survival, employing binary
-                                        cross-entropy loss for model evaluation. Contributed to understanding disaster dynamics through proficient data analysis,
-                                        machine learning modeling, and model evaluation techniques.
-                                    </li>
-                                </ul>
-                                <p style="text-align: center; font-size: 16px;"><a href="https://github.com/ErigiVaishnavi" class="link-underline-primary">Get more details of projects</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h4 class="card-title headinge" id="scrollspyHeading4">Relevant Coursework</h4>
-                                <p class="card-text paragraphe">I have knowledge on relevant courses such as Data Structures, OOP,
-                                    Computer Networks, Algorithms Analysis, Deep Learning, <br> Database Management systems,
-                                    Artificial Intelligence, Machine Learning, Operating System, Computer Graphics, Computer Architecture,
-                                    Software Engineer, Cloud Computing, Distributed System, Data Science systems, Cryptography & Information Security,
-                                    Microprocessors & Microcontrollers, Digital Image processing & its application</p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                        <button type="button" style="color: black; margin-bottom: 10px;" class="btn btn-secondary" id="scrollspyHeading4" onclick="display('sectionmore')">Get More Details</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div id="sectionmore">
+        <!-- Projects Page -->
+        <section id="projects" class="page">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Expense Tracker App</h3>
+                    <p class="project-subtitle">Working on it</p>
+                    <p class="project-tech">Node.js with Express.js, MongoDB, GraphQL, Apollo, React, Tailwind, Passport, cron, Git, GitHub</p>
+                    <p class="project-description">This project involves building a full stack expense tracker app using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Apollo GraphQL for seamless API interactions, state management, and advanced features like authentication, and CRUD operations.</p>
+                    <div class="project-links">
+                        <a href="https://erigivaishnavi.github.io/Expense-Tracking-app/" target="_blank" class="project-btn">View Project formate</a>
+                        <a href="https://github.com/ErigiVaishnavi/Expense-Tracker-App" class="project-btn">Github</a>
+                    </div>
+                </div>
 
-    </div>
+                <div class="project-item">
+                    <h3>Personal Music Website</h3>
+                    <p class="project-tech">HTML, CSS, JavaScript</p>
+                    <p class="project-description">Created a responsive website for streaming unique Christian songs, featuring a custom audio player and a user-friendly interface.</p>
+                    <div class="project-links">
+                        <a href="https://erigivaishnavi.github.io/music-website/" class="project-btn">Website</a>
+                        <a href="https://github.com/ErigiVaishnavi/music-website" class="project-btn">Github</a>
+                    </div>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                <div class="project-item">
+                    <h3>Early Warning Prediction of Environmental Parameters</h3>
+                    <p class="project-tech">Python, Machine Learning, Deep Learning Models, Google Colab</p>
+                    <p class="project-description">This project focuses on forecasting environmental parameters in underground mines using SARIMA, XGBOOST, and LSTM algorithms, analyzing conditions over time to classify air quality levels and identify critical parameters for effective control and mitigation. collaborated with team members.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/Early-Warning-Prediction-of-Environmental-Parameters" class="project-btn">Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Non-Intrusive Load Monitoring (NILM)</h3>
+                    <p class="project-tech">Machine Learning and Deep Learning Models, Python, Google Colab</p>
+                    <p class="project-description">NILM methodologies using advanced ML and DL models to analyze energy consumption patterns, identify appliance usage, and optimize energy efficiency for smart grid technologies.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/NILM" class="project-btn">Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Analyzing Wikipedia Talk Network with GraphX</h3>
+                    <p class="project-tech">Apache Spark, Scala, OpenJDK</p>
+                    <p class="project-description">Used Spark's GraphX library to analyze the Wikipedia Talk Network, identifying and highlighting the top 50 discussion communities by implementing the Connected Components algorithm.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/Analyzing-Wikipedia-Talk-Network-with-GraphX" class="project-btn">Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>AWS Chatbot with Lex and Lambda</h3>
+                    <p class="project-tech">Amazon Lex, AWS Lambda, Amazon Lex Console, Python</p>
+                    <p class="project-description">This project involved creating an AWS-based chatbot using Amazon Lex and AWS Lambda, enabling natural language interaction with seamless integration and deployment via "Kommunicate" for an efficient user experience.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/ChatBot-using-AWS-Services" class="project-btn">Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Secure EHR with Blockchain Access Control</h3>
+                    <p class="project-tech">Solidity, Web3, Ethereum, Ganache, Truffle</p>
+                    <p class="project-description">We developed an electronic health record (EHR) system using blockchain and access control with Ethereum and Smart Contracts, ensuring data privacy and efficient record access, while addressing scalability and interoperability challenges for future healthcare implementation.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/EHR-With-Blockchain-AccessControl-Mini-Project-" class="project-btn">Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Readit- AN INFORMATORY WEBSITE</h3>
+                    <p class="project-tech">HTML, CSS, JavaScript</p>
+                    <p class="project-description">I led the front-end development for "Readit," a web app enabling user QA, designing an intuitive interface with HTML, CSS, and JavaScript, and integrating it with the back-end for a seamless experience.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/PROJECT_FINAL-Readit-Website-OOP-lab-project--main" class="project-btn">Github</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3>3D-City-Architecture</h3>
+                    <p class="project-tech">Computer Graphics, C++, OpenGL, CodeBlocks</p>
+                    <p class="project-description">Developed a 3D city architecture visualization project using OpenGL and C++, demonstrating advanced computer graphics concepts and 3D modeling techniques.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ErigiVaishnavi/3D_CITY_ARCHITECTUTRE-ComputerGraphics-" class="project-btn">Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <h2 class="section-title">Contact Me</h2>
+            
+            <div class="contact-content">
+                <h2 class="contact-heading">Have You Any Questions?</h2>
+                <p class="contact-subheading">I'M AT YOUR SERVICE</p>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call me on</h3>
+                        <p>+91 6300246014</p>
+                        <p>+91 7893529765</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>erigivaishnavi77@gmail.com</p>
+                        <p>20bcs044@iiitdwd.ac.in</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/erigi-vaishnavi/" target="_blank">Open</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h3>Github</h3>
+                        <a href="https://github.com/ErigiVaishnavi" target="_blank">Open</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
